@@ -1,4 +1,4 @@
-![p2](https://user-images.githubusercontent.com/78002356/117605249-eab71600-b11c-11eb-9cd1-57c5ef776eb9.JPG)
+
 
 # Portfolio
 
