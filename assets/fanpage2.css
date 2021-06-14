@@ -1,84 +1,162 @@
-body,html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  width: 100%;
-  height: 70px;
-  background-color: #eb6534;
-
-}
-
-h1 {
-  position: absolute;
-  padding: 3px;
-  float: left;
-  margin-left: 2%;
-  margin-top:10px ;
-  color: #ad5d4e;
-}
-
-span {
-  color: beige;
-}
-
-ul {
-  width: auto;
-  float: right;
-  margin-top: 8px;
-}
-
-li{
-  display: inline-block;
-  padding: 15px 30px;
-
-}
-
-a{
-  text-align: center;
-  color: beige;
-  text-decoration: none;
-  font-size: 1.2vw;
-}
-
-a:hover{
-  color: #ad5d4e;
-  transition: 0.4s;
-}
-
-p {
-  text-align: center;
+.navbar {
+  display: flex;
   justify-content: center;
-  font-size: 25px;
-  
-  margin-left: 10%;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
 }
 
-#Title1 {
-  font-size: 50px;
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.navbar ul li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-img {
-  margin-left: 40%;
-  margin-top:0;
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
 }
 
-#img1 {
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("./images/bg.jpg") no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.heading {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 40px;
+}
+
+.btn {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solide white;
+  color: white;
+  outline: none;
+  transition: 0.6 ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+}
+
+#pic1 {
   height: 500px;
-  margin-top: 8%;
-  margin-left: 3%;
+  width: 900px;
+  margin-top: 80px;
 }
 
-#des1 {
-  color: #ad5d4e;
-  text-align: left;
-  margin-left: 3%;
+#p1{
+  font-size: 5rem;
 }
+
+.pbtn {
+  background-color: black; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.pbtn:hover {
+  background-color: #3e8e41
+}
+#me {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 40%
+;
+}
+
+#about{
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-left: 40%;
+}
+
+.info{
+  display:inline-block;
+  padding:0.46em 1.6em;
+  border:0.1em solid #000000;
+  margin:0 0.2em 0.2em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  background-color:#FFFFFF;
+  text-align:center;
+  transition: all 0.15s;
+  margin-left: 40%;
+  }
+
+  .info:hover{
+  text-shadow: 0 0 2em rgba(255,255,255,1);
+  color:#000000;
+  border-color:#FFFFFF;
+  }
+
+  
   
 
-
-
-
-
-  
